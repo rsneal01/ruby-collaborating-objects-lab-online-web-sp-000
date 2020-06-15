@@ -10,7 +10,8 @@ class MP3Importer
   end
   
   def files
-    @@all
+    Dir.each_child(path).map {|file| file}
+    
   end
 
 end
