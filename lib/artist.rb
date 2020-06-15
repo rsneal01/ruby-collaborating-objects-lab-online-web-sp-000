@@ -18,7 +18,8 @@ class Artist
   end
   
   def add_song(song)
-    song.artist = self    
+    song.artist = self   
+    # how can we call this?  what is the scope?
   end
   
   def songs
