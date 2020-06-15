@@ -27,7 +27,7 @@ class Artist
     end
   end
   
-  require 'pry'
+
   def self.find_or_create_by_name(name)
     find_artist = self.all.find do |artist_name|
       artist_name.name == name
@@ -40,7 +40,6 @@ class Artist
       new_artist.save
       new_artist
     end
-    binding.pry
   end
   
   
